@@ -52,5 +52,5 @@ module.exports = {
   help: '',
   needsApp: true,
   needsAuth: true,
-  run: cli.command(co.wrap(run))
+  run: cli.command(co.wrap(require('../../clippy').wrap(run)))
 }

@@ -89,5 +89,5 @@ Example:
     {name: 'json', description: 'output releases in json format'},
     {name: 'extended', char: 'x', hidden: true}
   ],
-  run: cli.command(co.wrap(run))
+  run: cli.command(co.wrap(require('../../clippy').wrap(run)))
 }

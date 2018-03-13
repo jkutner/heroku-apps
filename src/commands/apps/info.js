@@ -117,7 +117,7 @@ function * run (context, heroku) {
   }
 }
 
-let cmd = {
+let cmd = require('../../clippy').wrap({
   description: 'show detailed app information',
   help: `Examples:
 
@@ -140,7 +140,7 @@ let cmd = {
     {name: 'json', char: 'j'}
   ],
   run: cli.command({preauth: true}, co.wrap(run))
-}
+})
 
 module.exports = [
   Object.assign({topic: 'apps', command: 'info'}, cmd),

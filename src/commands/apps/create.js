@@ -72,7 +72,7 @@ function * run (context, heroku) {
   }
 }
 
-let cmd = {
+let cmd = require('../../clippy').wrap({
   description: 'creates a new app',
   help: `Examples:
 
@@ -115,7 +115,7 @@ let cmd = {
     flags.team({name: 'team', hasValue: true})
   ],
   run: cli.command(co.wrap(run))
-}
+})
 
 module.exports = [
   Object.assign({topic: 'apps', command: 'create'}, cmd),

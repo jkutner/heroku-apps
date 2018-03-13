@@ -1,13 +1,12 @@
 {
-  "name": "@heroku-cli/plugin-apps",
-  "description": "Heroku CLI plugin to manage apps.",
-  "version": "2.4.27",
-  "author": "Jeff Dickey (@jdxcode)",
+  "name": "heroku-cli-clippy",
+  "description": "The Heroku Office Assistant plugin.",
+  "version": "1.0.0",
+  "author": "Joe Kutner",
   "bugs": {
-    "url": "https://github.com/heroku/heroku-apps/issues"
+    "url": "https://github.com/jkutner/heroku-cli-clippy/issues"
   },
   "cli-engine": {
-    "bin": "heroku",
     "topics": {
       "stack": {
         "description": "manage heroku stacks",
@@ -100,7 +99,7 @@
     "assets",
     "lib"
   ],
-  "homepage": "https://github.com/heroku/heroku-apps",
+  "homepage": "https://github.com/jkutner/heroku-cli-clippy",
   "jest": {
     "setupTestFrameworkScriptFile": "./test/jest.js"
   },
@@ -111,7 +110,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/heroku-apps.git"
+    "url": "https://github.com/jkutner/heroku-cli-clippy.git"
   },
   "scripts": {
     "build": "babel src -d lib --ignore '*.test.js'",
